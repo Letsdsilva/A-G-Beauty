@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>A&G Beauty | Agendamento</title>
+<meta name="description" content="A&G Beauty — agende seu horário com nossas profissionais.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#inicio"><img class="brand-avatar" src="assets/avatar_duas.png" alt="AG Beauty"><span class="brand-text"><strong>AG Beauty</strong><small>BELEZA • AUTOCUIDADO • VOCÊ</small></span></a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <nav id="mainNav"><a class="active" href="#inicio">Início</a><a href="#profissionais">Serviços</a><a href="#promocoes">Promoções</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a><a class="professional-nav" href="portal.html">Área profissional</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy"><span class="eyebrow">A&G BEAUTY • CÍLIOS • CABELO • UNHAS</span><h1>Beleza, cuidado e<br><em>confiança em um só lugar.</em></h1><p>Escolha sua profissional e encontre o serviço ideal para você. Os horários exibidos são somente os realmente disponíveis.</p><button class="button hero-button" data-open-booking>Agendar meu horário <span>→</span></button></div>
+  <div class="hero-art"><img class="hero-full-logo" src="assets/ag-beauty-logo.png" alt="AG Beauty — Grazielle e Ana"></div>
+</section>
+
+<section class="professionals-section" id="profissionais">
+  <div class="section-heading"><div><span class="eyebrow">ESCOLHA COMO QUER SE CUIDAR</span><h2>Nossas profissionais</h2></div><p>Clique em <b>Agendar</b> para ver os serviços, fotos, preços e horários.</p></div>
+  <div class="professional-cards">
+    <article class="professional-card" data-category="cilios"><img src="assets/cilios.png" alt="Cílios"><div class="card-copy"><span class="card-kicker">GRAZIELLE KARINE</span><h3>Cílios</h3><p>Realce seu olhar com modelos escolhidos pela profissional.</p><button class="card-action" data-category-booking="cilios">Agendar <span>→</span></button></div></article>
+    <article class="professional-card" data-category="cabelo"><img src="assets/cabelo.png" alt="Cabelo"><div class="card-copy"><span class="card-kicker">ANA COLARES</span><h3>Cabelo</h3><p>Cuidados e procedimentos para deixar seu cabelo ainda mais lindo.</p><button class="card-action" data-category-booking="cabelo">Agendar <span>→</span></button></div></article>
+    <article class="professional-card" data-category="nail"><img src="assets/nail.png" alt="Nail"><div class="card-copy"><span class="card-kicker">ANY RODRIGUES</span><h3>Nail</h3><p>Detalhes e cuidados para suas unhas do seu jeito.</p><button class="card-action" data-category-booking="nail">Agendar <span>→</span></button></div></article>
+  </div>
+</section>
+
+<section class="promo-section" id="promocoes"><div class="promo-inner"><div><span class="eyebrow">PROMOÇÕES & COMBOS</span><h2>Cuidados que podem<br><em>ser combinados.</em></h2><p>Quando uma profissional criar uma promoção em parceria com outra, o combo aparecerá aqui automaticamente.</p></div><button class="button" data-open-booking>Ver promoções disponíveis →</button></div></section>
+
+<section class="about section" id="sobre"><div><span class="eyebrow">SOBRE A A&G BEAUTY</span><h2>Beleza com cuidado<br><em>em cada detalhe.</em></h2><p>Um espaço pensado para reunir profissionais diferentes em uma experiência leve, organizada e personalizada.</p></div><div class="about-note"><span>“</span><p>Você escolhe o serviço. A profissional disponibiliza os dias e horários que pode atender.</p></div></section>
+<section class="contact-strip" id="contato"><div><span class="eyebrow">FALE COM A GENTE</span><h2>Precisa de ajuda?</h2></div><a class="button" href="https://wa.me/5511995352907" target="_blank" rel="noopener">WhatsApp ↗</a></section>
+</main>
+<footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">A<span>&</span>G</span><span class="brand-name">BEAUTY</span></a><p>Beleza, autoestima e bem-estar. <span>♡</span></p><div class="footer-bottom"><span>© 2026 A&G Beauty</span><a href="portal.html">Área profissional</a></div></footer>
+
+<div class="booking-backdrop" id="bookingBackdrop" hidden>
+  <section class="booking-panel" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <button class="modal-close" id="bookingClose">×</button>
+    <div class="booking-head"><span class="eyebrow">AGENDAMENTO</span><h2 id="bookingTitle">Escolha seu atendimento</h2><p>Os horários abaixo são os que as profissionais disponibilizaram.</p></div>
+    <div class="booking-content">
+      <aside class="professionals" id="professionalsList"></aside>
+      <div class="booking-main">
+        <div id="serviceStep"></div>
+        <div id="dateStep"></div>
+        <div id="timeStep"></div>
+        <div id="clientStep" hidden></div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
