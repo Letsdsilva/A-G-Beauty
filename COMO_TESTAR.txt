@@ -1,0 +1,17 @@
+A&G BEAUTY — TESTE DO SISTEMA
+
+1. Abra portal.html.
+2. Para ver seu painel, selecione ADM:
+   usuário: admin
+   senha: Admin@2026
+3. Para ver o painel da Ana, selecione Profissional:
+   usuário: ana
+   senha: Ana@2026
+4. Para ver o painel da Grazielle:
+   usuário: grazielle
+   senha: Grazi@2026
+5. Para ver o painel da Nail:
+   usuário: nail
+   senha: Nail@2026
+
+Importante: esta é uma versão de demonstração local. Os dados ficam no navegador (localStorage). Para publicar o sistema de verdade, depois vamos ligar a autenticação e os dados a um banco online.
